@@ -15,6 +15,7 @@
 		E1B1A2C727257DBD0099B4C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1B1A2C527257DBD0099B4C0 /* Main.storyboard */; };
 		E1B1A2C927257DBD0099B4C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1B1A2C827257DBD0099B4C0 /* Assets.xcassets */; };
 		E1B1A2CC27257DBD0099B4C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1B1A2CA27257DBD0099B4C0 /* LaunchScreen.storyboard */; };
+		E1FA6B092725886B005C63B4 /* CityCovidOverview.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1FA6B082725886B005C63B4 /* CityCovidOverview.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		E1B1A2C827257DBD0099B4C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E1B1A2CB27257DBD0099B4C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E1B1A2CD27257DBD0099B4C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E1FA6B082725886B005C63B4 /* CityCovidOverview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityCovidOverview.swift; sourceTree = "<group>"; };
 		FB44682CD8D334D0ECCF2D9E /* Pods-GoodbyeCOVID19.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoodbyeCOVID19.debug.xcconfig"; path = "Target Support Files/Pods-GoodbyeCOVID19/Pods-GoodbyeCOVID19.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -90,6 +92,7 @@
 				E1B1A2C827257DBD0099B4C0 /* Assets.xcassets */,
 				E1B1A2CA27257DBD0099B4C0 /* LaunchScreen.storyboard */,
 				E1B1A2CD27257DBD0099B4C0 /* Info.plist */,
+				E1FA6B082725886B005C63B4 /* CityCovidOverview.swift */,
 			);
 			path = GoodbyeCOVID19;
 			sourceTree = "<group>";
@@ -106,6 +109,7 @@
 				E1B1A2B927257DBD0099B4C0 /* Frameworks */,
 				E1B1A2BA27257DBD0099B4C0 /* Resources */,
 				21153B4DC447043502BC4EEB /* [CP] Embed Pods Frameworks */,
+				E1BD691B272642FF001AED6C /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -201,6 +205,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		E1BD691B272642FF001AED6C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -211,6 +232,7 @@
 				E1B1A2C427257DBD0099B4C0 /* ViewController.swift in Sources */,
 				E17336C5272583CF00DAECE3 /* CovidDetailViewController.swift in Sources */,
 				E1B1A2C027257DBD0099B4C0 /* AppDelegate.swift in Sources */,
+				E1FA6B092725886B005C63B4 /* CityCovidOverview.swift in Sources */,
 				E1B1A2C227257DBD0099B4C0 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
